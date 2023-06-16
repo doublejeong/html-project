@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	body {
+		text-align: center;
+
+	}
+	
+
+	#class div {
+		display: inline-block;
+		height: 200px;
+		margin: 0 5px;
+
+	}
+	div:nth-child(1) {
+		background-color: red;
+	}
+	div:nth-child(2) {
+
+		background-color: blue;
+	}
+	div:nth-child(3) {
+
+		background-color: orange;
+	}
+	div:nth-child(4) {
+
+		background-color: green;
+	}
+	@media screen and (max-width: 1024px){
+		div {width: 20%;
+		}
+	}
+	@media screen and (max-width: 800px){
+		div {width: 45%;
+		}
+	}
+	@media screen and (max-width: 500px){
+		div {width: 90%;
+		}
+	}
+
+</style>
+</head>
+
+<body>
+	<h1>반응형 웹 디자인</h1>
+	<main id="class">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</main>
+</body>
+</html>
